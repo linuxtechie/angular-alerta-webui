@@ -61,6 +61,8 @@
             <span ng-if="col == 'service'">{{ alert.service.join(', ') }}</span>
             <span ng-if="col == 'group'">{{ alert.group }}</span>
             <span ng-if="col == 'value'">{{ alert.value }}</span>
+            <span ng-if="col == 'ticketId'">{{ alert.ticketId }}</span>
+            <span ng-if="col == 'ticketStatus'">{{ alert.ticketStatus }}</span>
             <span ng-if="col == 'text'"><span ng-bind-html="alert.text | linky:'_blank'"></span></span>
             <span ng-if="col == 'tags'"><span ng-repeat="tag in alert.tags"><span class="label label-primary">{{ tag }}</span> </span></span>
             <span ng-if="alert.attributes.hasOwnProperty(col)"><span ng-bind-html="alert.attributes[col]"></span></span>
